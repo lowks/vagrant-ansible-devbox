@@ -108,7 +108,7 @@
     - name: install unattended upgrades package
       apt: name=unattended-upgrades
       notify:
-        - dpkg reconfigue unattended
+        - dpkg reconfigure unattended
       run_once: true
     - pip: name=setuptools
     - pip: name=pip version=6.0.6
